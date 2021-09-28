@@ -219,7 +219,7 @@ EFI_STATUS efi_main (EFI_HANDLE ImageHandle, EFI_SYSTEM_TABLE *SystemTable) {
 	EFI_MEMORY_DESCRIPTOR* Map = NULL;
 	UINTN MapSize, MapKey;
 	UINTN DescriptorSize;
-	UINTN32 DescriptorVersion;
+	UINT32 DescriptorVersion;
 	{
 
 		SystemTable->BootServices->GetMemoryMap(&MapSize, Map, &MapKey, &DescriptorSize, &DescriptorVersion);
@@ -234,10 +234,12 @@ EFI_STATUS efi_main (EFI_HANDLE ImageHandle, EFI_SYSTEM_TABLE *SystemTable) {
 	bootInfo.framebuffer = newBuffer;
 	bootInfo.psf1_Font = newFont;
 	bootInfo.mMap = Map;
-	bootInfo.mMapSize;
+	bootInfo.mMapSize = MapSize;
 	bootInfo.mMapDescriptorSize = DescriptorSize;
 
-	KernelStart(BootInfo);
+	SystemTable->BootServices->ExitBootServices(ImageHandle, MapKey);
+
+	KernelStart(&bootInfo);
 
 	return EFI_SUCCESS; // Exit the UEFI application
 }
