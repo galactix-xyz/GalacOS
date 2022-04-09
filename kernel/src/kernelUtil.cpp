@@ -1,5 +1,8 @@
 #include "kernelUtil.h"
 #include "gdt/gdt.h"
+#include "interrupts/idt.h"
+#include "interrupts/interrupts.h"
+#include "io.h"
 
 KernelInfo kernelInfo;
 PageTableManager pageTableManager = NULL;
@@ -35,9 +38,45 @@ void PrepareMemory(BootInfo* bootInfo) {
     kernelInfo.pageTableManager = &pageTableManager;
 }
 
+IDTR idtr;
+void PrepareInterrupts(){
+    idtr.Limit = 0x0FFF;
+    idtr.Offset = (uint64_t)GlobalAllocator.RequestPage();
 
-KernelInfo InitializeKernel(BootInfo* bootInfo) {
- 
+    IDTDescEntry* int_PageFault = (IDTDescEntry*)(idtr.Offset + 0xE * sizeof(IDTDescEntry));
+    int_PageFault->SetOffset((uint64_t)PageFault_Handler);
+    int_PageFault->type_attr = IDT_TA_InterruptGate;
+    int_PageFault->selector = 0x08;
+
+    IDTDescEntry* int_DoubleFault = (IDTDescEntry*)(idtr.Offset + 0x8 * sizeof(IDTDescEntry));
+    int_DoubleFault->SetOffset((uint64_t)DoubleFault_Handler);
+    int_DoubleFault->type_attr = IDT_TA_InterruptGate;
+    int_DoubleFault->selector = 0x08;
+
+    IDTDescEntry* int_GPFault = (IDTDescEntry*)(idtr.Offset + 0xD * sizeof(IDTDescEntry));
+    int_GPFault->SetOffset((uint64_t)GPFault_Handler);
+    int_GPFault->type_attr = IDT_TA_InterruptGate;
+    int_GPFault->selector = 0x08;
+
+    IDTDescEntry* int_Keyboard = (IDTDescEntry*)(idtr.Offset + 0x21 * sizeof(IDTDescEntry));
+    int_Keyboard->SetOffset((uint64_t)KeyboardInt_Handler);
+    int_Keyboard->type_attr = IDT_TA_InterruptGate;
+    int_Keyboard->selector = 0x08;
+
+    asm ("lidt %0" : : "m" (idtr));
+
+    RemapPIC();
+    outb(PIC1_DATA, 0b11111101);
+    outb(PIC2_DATA, 0b11111111);
+
+    asm ("sti");
+}
+
+BasicRenderer r = BasicRenderer(NULL, NULL);
+KernelInfo InitializeKernel(BootInfo* bootInfo){
+    r = BasicRenderer(bootInfo->framebuffer, bootInfo->psf1_Font);
+    GlobalRenderer = &r;
+
     GDTDescriptor gdtDescriptor;
     gdtDescriptor.Size = sizeof(GDT) - 1;
     gdtDescriptor.Offset = (uint64_t)&DefaultGDT;
@@ -46,6 +85,8 @@ KernelInfo InitializeKernel(BootInfo* bootInfo) {
     PrepareMemory(bootInfo);
 
     memset(bootInfo->framebuffer->BaseAddress, 0, bootInfo->framebuffer->BufferSize);
+
+    PrepareInterrupts();
 
     return kernelInfo;
 }

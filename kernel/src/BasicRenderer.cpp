@@ -1,5 +1,7 @@
 #include "BasicRenderer.h"
 
+BasicRenderer* GlobalRenderer;
+
 BasicRenderer::BasicRenderer(Framebuffer* targetFramebuffer, PSF1_FONT* psf1_Font)
 {
     TargetFramebuffer = targetFramebuffer;
@@ -37,4 +39,24 @@ void BasicRenderer::PutChar(char chr, unsigned int xOff, unsigned int yOff)
         }
         fontPtr++;
     }
+}
+
+void BasicRenderer::Clear(uint32_t colour) {
+    uint64_t fbBase = (uint64_t)TargetFramebuffer->BaseAddress;
+    uint64_t bytesPerScanline = TargetFramebuffer->PixelsPerScanLine * 4;
+    uint64_t fbHeight = TargetFramebuffer->Height;
+    uint64_t fbSize = TargetFramebuffer->BufferSize;
+
+    for (int verticalScanline = 0; verticalScanline < fbHeight; verticalScanline++) {
+        uint64_t pixPtrBase = fbBase + (bytesPerScanline * verticalScanline);
+
+        for (uint32_t* pixPtr = (uint32_t*)pixPtrBase; pixPtr < (uint32_t*)(pixPtrBase + bytesPerScanline); pixPtr++) {
+            *pixPtr = colour;
+        }
+    }
+}
+
+void BasicRenderer::Next() {
+    CursorPosition.X = 0;
+    CursorPosition.Y += 16;
 }
