@@ -10,6 +10,7 @@
 #include "paging/pageMapIndexer.h"
 #include "paging/paging.h"
 #include "paging/pageTableManager.h"
+#include "acpi.h"
 
 struct BootInfo {
 	Framebuffer* framebuffer;
@@ -17,6 +18,7 @@ struct BootInfo {
 	EFI_MEMORY_DESCRIPTOR* mMap;
 	uint64_t mMapSize;
 	uint64_t mMapDescSize;
+	ACPI::RSDP2* rsdp;
 } ;
 
 extern uint64_t _KernelStart;

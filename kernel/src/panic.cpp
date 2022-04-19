@@ -2,7 +2,8 @@
 #include "BasicRenderer.h"
 
 void Panic(char* panicMessage) {
-	GlobalRenderer->Clear(0x00ff0000);
+	GlobalRenderer->ClearColour = 0x00ff0000;
+	GlobalRenderer->Clear();
 	GlobalRenderer->CursorPosition = { 0, 0 };
 
 	GlobalRenderer->Colour = 0;

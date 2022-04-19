@@ -14,4 +14,4 @@ LoadGDT:
     mov rax, 0x08
     push rax
     push rdi
-    retfq ; why the fuck is this erroring here?
+    retfq ; why the fuck is this erroring here? nvm, I just retarded!
