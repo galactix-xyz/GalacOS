@@ -3,5 +3,5 @@
 #include "acpi.h"
 
 namespace PCI {
-	void EnumeratePCI(ACPI::MCFGHeader);
+	void EnumeratePCI(ACPI::MCFGHeader* mcfg);
 }
