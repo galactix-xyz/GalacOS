@@ -15,8 +15,10 @@ void HandleKeyboard(uint8_t scancode) {
 			LeftShiftPressed = false;
 			return;
 
+		// Temporarily used as "clear screen"
 		case RightShift:
-			RightShiftPressed = true;
+			// RightShiftPressed = true;
+			GlobalRenderer->Clear();
 			return;
 
 		case RightShift + 0x80:
