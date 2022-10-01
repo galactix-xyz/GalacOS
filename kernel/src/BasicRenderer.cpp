@@ -86,6 +86,7 @@ void BasicRenderer::Print(const char* str)
     }
 }
 
+// This confuses me still.. A year later.
 void BasicRenderer::PutChar(char chr, unsigned int xOff, unsigned int yOff)
 {
     unsigned int* pixPtr = (unsigned int*)TargetFramebuffer->BaseAddress;
