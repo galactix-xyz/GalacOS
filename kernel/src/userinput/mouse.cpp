@@ -1,21 +1,21 @@
 #include "mouse.h"
 
 uint8_t mousePointer[] = {
-	0b11111111, 0b11100000,
-	0b11111111, 0b10000000,
-	0b11111110, 0b00000000,
-	0b11111100, 0b00000000,
-	0b11111000, 0b00000000,
-	0b11110000, 0b00000000,
-	0b11100000, 0b00000000,
-	0b11000000, 0b00000000,
-	0b11000000, 0b00000000,
 	0b10000000, 0b00000000,
-	0b10000000, 0b00000000,
-	0b00000000, 0b00000000,
-	0b00000000, 0b00000000,
-	0b00000000, 0b00000000,
-	0b00000000, 0b00000000,
+	0b11000000, 0b00000000,
+	0b10100000, 0b00000000,
+	0b10010000, 0b00000000,
+	0b10001000, 0b00000000,
+	0b10000100, 0b00000000,
+	0b10000010, 0b00000000,
+	0b10000001, 0b00000000,
+	0b10000011, 0b00000000,
+	0b10000100, 0b00000000,
+	0b10111100, 0b00000000,
+	0b11000110, 0b00000000,
+	0b00000110, 0b00000000,
+	0b00000011, 0b00000000,
+	0b00000010, 0b00000000,
 	0b00000000, 0b00000000,
 };
 
@@ -140,7 +140,7 @@ void processMousePacket() {
 
         if (mousePacket[0] & PS2Leftbutton) {
             // Left Button clicked
-            GlobalRenderer->PutChar('@', mousePosition.X, mousePosition.Y);
+            // GlobalRenderer->PutChar('_', mousePosition.X, mousePosition.Y);
         }
 
         if (mousePacket[0] & PS2Middlebutton) {
@@ -149,10 +149,10 @@ void processMousePacket() {
 
         if (mousePacket[0] & PS2Rightbutton) {
             // Right Button clicked
-            uint32_t colour = GlobalRenderer->Colour;
-            GlobalRenderer->Colour = 0x0000ff00;
-            GlobalRenderer->PutChar('@', mousePosition.X, mousePosition.Y);
-            GlobalRenderer->Colour = colour;
+            // uint32_t colour = GlobalRenderer->Colour;
+            // GlobalRenderer->Colour = 0x0000ff00;
+            // GlobalRenderer->PutChar('_', mousePosition.X, mousePosition.Y);
+            // GlobalRenderer->Colour = colour;
         }
 
         mousePacketReady = false;

@@ -6,11 +6,13 @@
 #include "efiMemory.h"
 #include "memory.h"
 #include "Bitmap.h"
-#include "paging/pageFrameAlloc.h"
-#include "paging/pageMapIndexer.h"
+#include "paging/PageFrameAlloc.h"
+#include "paging/PageMapIndexer.h"
 #include "paging/paging.h"
-#include "paging/pageTableManager.h"
+#include "paging/PageTableManager.h"
+#include "userinput/mouse.h"
 #include "acpi.h"
+#include "pci.h"
 
 struct BootInfo {
 	Framebuffer* framebuffer;
