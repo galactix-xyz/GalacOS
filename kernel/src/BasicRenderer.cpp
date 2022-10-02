@@ -127,6 +127,7 @@ void BasicRenderer::Clear() {
     }
 }
 
+// Basically just backspace
 void BasicRenderer::ClearChar(){
 
     if (CursorPosition.X == 0){
