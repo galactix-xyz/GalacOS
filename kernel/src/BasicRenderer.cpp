@@ -14,6 +14,8 @@ uint32_t BasicRenderer::getPixel(uint32_t x, uint32_t y){
     return *(uint32_t*)((uint64_t)TargetFramebuffer->BaseAddress + (x*4) + (y * TargetFramebuffer->PixelsPerScanLine * 4));
 }
 
+
+// I have no idea
 void BasicRenderer::ClearMouseCursor(uint8_t* mouseCursor, Point position) {
     if (!mouseDrawn) return;
 
