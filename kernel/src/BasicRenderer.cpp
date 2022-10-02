@@ -155,6 +155,7 @@ void BasicRenderer::ClearChar(){
 
 }
 
+// Moves to next line
 void BasicRenderer::Next() {
     CursorPosition.X = 0;
     CursorPosition.Y += 16;
