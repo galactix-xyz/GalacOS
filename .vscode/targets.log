@@ -1,0 +1,397 @@
+make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.82.90
+# Built for i686-pc-mingw32
+# Copyright (C) 1988-2012 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+ 
+
+# Make data base, printed on Mon Aug 08 00:53:18 2022
+
+# Variables
+
+# environment
+POWERSHELL_DISTRIBUTION_CHANNEL = MSI:Windows 10 Pro
+# automatic
+?F = $(notdir $?)
+# automatic
+<D = $(patsubst %/,%,$(patsubst %\,%,$(dir $<)))
+# environment
+WSLENV = BASH_ENV/u
+# default
+.SHELLFLAGS := -c
+# makefile
+MAKEFLAGS = Rrqp
+# automatic
+?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
+# environment
+PLATFORMIO_IDE = 2.5.1
+# automatic
+@D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
+# environment
+HOMEDRIVE = C:
+# autom 
+atic
+@F = $(notdir $@)
+# automatic
+^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
+# makefile
+CURDIR := c:/xampp/htdocs/Projects/GalacOSTheBest
+# default
+SHELL := sh.exe
+# environment
+CLION = G:\CLion 2021.2\bin;
+# environment
+WINDIR = C:\WINDOWS
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupport":true}
+# environment
+ONEDRIVE = C:\Users\admin\OneDrive
+# environment
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW
+# makefile
+MAKEFILE_LIST := 
+# environment
+FPS_BROWSER_USER_PROFILE_STRING = Default
+# environment
+TMP = C:\Users\admin\AppData\Local\Temp
+# environment
+QT_SCALE_FACTOR_ROUNDING_POLICY = RoundPreferFloor
+# environment
+PROGRAMW6432 = C:\Program Files
+# environment
+PROGRAMDATA = C:\ProgramData
+# environment
+NODE_DIR = C:\Program Files\nodejs
+# environment
+VSCODE_CWD = C:\Users\admin\AppData\Local\Programs\Microsoft VS Code
+# environment
+NO_PROXY = 127.0.0.1
+# environment
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# environment
+GIT_LFS_PATH = C:\Program Files\Git LFS
+# environment
+CHOCOLATEYLASTPATHUPDATE = 132766400365332427
+# environment
+PROCESSOR_ARCHITECTURE = x86
+# environment
+USERPROFILE = C:\Users\admin
+# environment
+CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
+# environment
+BASH_ENV = /etc/bash.bashrc
+# environment
+ALLUSERSPROFILE = C:\ProgramData
+# environment
+NUMBER_OF_PROCESSORS = 12
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+ANDROID_HOME = G:\Android\Sdk
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver
+# environment
+OCULUSBASE = C:\Program Files\Oculus\
+# environment
+VPROJECT = K:\Games\steamapps\common\half-life 2\hl2
+# automatic
+%F = $(notdir $%)
+# environment
+ANDROID_SDK_HOME = G:\AndroidSDKs
+# environment
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_5000_UMTSCBRJZYTRQMHX
+# environment
+COMPUTERNAME = OVERLORD
+# environment
+PROGRAMFILES = C:\Program Files (x86)
+# environment
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# environment
+SOURCESDK = K:\Games\steamapps\common\SourceSDK
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+USERNAME = admin
+# environment
+PUBLIC = C:\Users\Public
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+VSCODE_CODE_CACHE_PATH = C:\Users\admin\AppData\Roaming\Code\CachedData\3b889b090b5ad5793f524b5d1d39fda662b96a2a
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
+# environment
+LOGONSERVER = \\OVERLORD
+# environment
+ONEDRIVECONSUMER = C:\Users\admin\OneDrive
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+USERDOMAIN = OVERLORD
+# environment
+MIC_LD_LIBRARY_PATH = C:\Program Files (x86)\Common Files\Intel\Shared Libraries\compiler\lib\intel64_win_mic
+# environment
+MAKELEVEL := 0
+# environment
+PLATFORMIO_PATH = C:\Users\admin\.platformio\python3;K:\VMWARE\bin\;C:\Program Files\nodejs\versions\v16.10.0;C:\Program Files\nodejs\default;C:\Program Files\nodejs;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Oculus\Support\oculus-runtime;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;G:\FFMPEG\bin;C:\Python38\Scripts\;C:\Python38\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Users\admin\AppData\Local\Microsoft\WindowsApps;C:\Users\admin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\admin\AppData\Roaming\npm;C:\Program Files\PuTTY\;C:\ProgramData\ComposerSetup\bin;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\PowerShell\7\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Gpg4win\..\GnuPG\bin;C:\Program Files\Git LFS;C:\Program Files\OpenSSH-Win64;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Program Files\Cloudflare\Cloudflare WARP;C:\Program Files\WireGuard\;C:\Program Files\GitHub CLI\;C:\Program Files (x86)\cloudflared\.;C:\php;C:\Users\admin\scoop\shims;C:\Users\admin\AppData\Roaming\Composer\vendor\bin;G:\Home\Stuff\Programming\flutter\bin;C:\MinGW\bin;C:\Users\admin\AppData\Local\Yarn\bin;C:\Users\admin\AppData\Local\GitHubDesktop\bin;C:\Program Files\heroku\bin;C:\Program Files\NASM;C:\Program Files\qemu;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.2\bin;C:\mongo-shell\bin;C:\xampp\pgsql\13\bin;C:\Program Files (x86)\Nmap;C:\Program Files (x86)\Windows Kits\8.1\bin\x86;C:\Users\admin\.dotnet\tools;C:\Users\admin\AppData\Local\Yarn\bin;C:\platform-tools;C:\Users\admin\spicetify-cli;C:\Users\admin\.dotnet\tools;C:\Program Files (x86)\Windows Kits\10\bin\10.0.19041.0\x64;C:\bin;G:\CLion 2021.2\bin;G:\IntelliJ IDEA Community Edition 2021.2.1\bin;C:\Users\admin\AppData\Local\Keybase\;c:\ipmitool_1.8.18-dellemc_p001;C:\Program Files\Cloudflare\Cloudflare WARP\;C:\Users\admin\scoop\shims;G:\FFMPEG\bin;C:\Users\admin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\admin\AppData\Roaming\Composer\vendor\bin;G:\Home\Stuff\Programming\flutter\bin;C:\MinGW\bin;C:\Users\admin\AppData\Local\Yarn\bin;C:\Users\admin\AppData\Local\GitHubDesktop\bin;C:\Program Files\heroku\bin;C:\Program Files\NASM;C:\Program Files\qemu;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.2\bin;C:\mongo-shell\bin;C:\xampp\pgsql\13\bin;C:\Program Files (x86)\Nmap;C:\Users\admin\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Windows Kits\8.1\bin\x86;C:\Users\admin\.dotnet\tools;C:\Users\admin\AppData\Local\Yarn\bin;C:\platform-tools;C:\Users\admin\AppData\Roaming\npm;C:\Users\admin\spicetify-cli;C:\Users\admin\.dotnet\tools;C:\Program Files (x86)\Windows Kits\10\bin\10.0.19041.0\x64;C:\bin;G:\CLion 2021.2\bin;G:\IntelliJ IDEA Community Edition 2021.2.1\bin;C:\Users\admin\AppData\Local\Keybase\;c:\ipmitool_1.8.18-dellemc_p001;C:\php;;K:\VMWARE\bin\;C:\Program Files\nodejs\versions\v16.10.0;C:\Program Files\nodejs\default;C:\Program Files\nodejs;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Oculus\Support\oculus-runtime;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;G:\FFMPEG\bin;C:\Python38\Scripts\;C:\Python38\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Users\admin\AppData\Local\Microsoft\WindowsApps;C:\Users\admin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\admin\AppData\Roaming\npm;C:\Program Files\PuTTY\;C:\ProgramData\ComposerSetup\bin;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\PowerShell\7\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Gpg4win\..\GnuPG\bin;C:\Program Files\Git LFS;C:\Program Files\OpenSSH-Win64;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Program Files\Cloudflare\Cloudflare WARP;C:\Program Files\WireGuard\;C:\Program Files\GitHub CLI\;C:\Program Files (x86)\cloudflared\.;C:\php;C:\Users\admin\scoop\shims;C:\Users\admin\AppData\Roaming\Composer\vendor\bin;G:\Home\Stuff\Programming\flutter\bin;C:\MinGW\bin;C:\Users\admin\AppData\Local\Yarn\bin;C:\Users\admin\AppData\Local\GitHubDesktop\bin;C:\Program Files\heroku\bin;C:\Program Files\NASM;C:\Program Files\qemu;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.2\bin;C:\mongo-shell\bin;C:\xampp\pgsql\13\bin;C:\Program Files (x86)\Nmap;C:\Program Files (x86)\Windows Kits\8.1\bin\x86;C:\Users\admin\.dotnet\tools;C:\Users\admin\AppData\Local\Yarn\bin;C:\platform-tools;C:\Users\admin\spicetify-cli;C:\Users\admin\.dotnet\tools;C:\Program Files (x86)\Windows Kits\10\bin\10.0.19041.0\x64;C:\bin;G:\CLion 2021.2\bin;G:\IntelliJ IDEA Community Edition 2021.2.1\bin;C:\Users\admin\AppData\Local\Keybase\;c:\ipmitool_1.8.18-dellemc_p001;C:\Program Files\Cloudflare\Cloudflare WARP\;C:\Users\admin\scoop\shims;G:\FFMPEG\bin;C:\Users\admin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\admin\AppData\Roaming\Composer\vendor\bin;G:\Home\Stuff\Programming\flutter\bin;C:\MinGW\bin;C:\Users\admin\AppData\Local\Yarn\bin;C:\Users\admin\AppData\Local\GitHubDesktop\bin;C:\Program Files\heroku\bin;C:\Program Files\NASM;C:\Program Files\qemu;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.2\bin;C:\mongo-shell\bin;C:\xampp\pgsql\13\bin;C:\Program Files (x86)\Nmap;C:\Users\admin\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Windows Kits\8.1\bin\x86;C:\Users\admin\.dotnet\tools;C:\Users\admin\AppData\Local\Yarn\bin;C:\platform-tools;C:\Users\admin\AppData\Roaming\npm;C:\Users\admin\spicetify-cli;C:\Users\admin\.dotnet\tools;C:\Program Files (x86)\Windows Kits\10\bin\10.0.19041.0\x64;C:\bin;G:\CLion 2021.2\bin;G:\IntelliJ IDEA Community Edition 2021.2.1\bin;C:\Users\admin\AppData\Local\Keybase\;c:\ipmitool_1.8.18-dellemc_p001;C:\php;
+# environment
+INTELLIJ IDEA COMMUNITY EDITION = G:\IntelliJ IDEA Community Edition 2021.2.1\bin;
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+PATH = K:\VMWARE\bin\;C:\Program Files\nodejs\versions\v16.10.0;C:\Program Files\nodejs\default;C:\Program Files\nodejs;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Oculus\Support\oculus-runtime;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;G:\FFMPEG\bin;C:\Python38\Scripts\;C:\Python38\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Users\admin\AppData\Local\Microsoft\WindowsApps;C:\Users\admin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\admin\AppData\Roaming\npm;C:\Program Files\PuTTY\;C:\ProgramData\ComposerSetup\bin;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\PowerShell\7\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Gpg4win\..\GnuPG\bin;C:\Program Files\Git LFS;C:\Program Files\OpenSSH-Win64;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Program Files\Cloudflare\Cloudflare WARP;C:\Program Files\WireGuard\;C:\Program Files\GitHub CLI\;C:\Program Files (x86)\cloudflared\.;C:\php;C:\Users\admin\scoop\shims;C:\Users\admin\AppData\Roaming\Composer\vendor\bin;G:\Home\Stuff\Programming\flutter\bin;C:\MinGW\bin;C:\Users\admin\AppData\Local\Yarn\bin;C:\Users\admin\AppData\Local\GitHubDesktop\bin;C:\Program Files\heroku\bin;C:\Program Files\NASM;C:\Program Files\qemu;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.2\bin;C:\mongo-shell\bin;C:\xampp\pgsql\13\bin;C:\Program Files (x86)\Nmap;C:\Program Files (x86)\Windows Kits\8.1\bin\x86;C:\Users\admin\.dotnet\tools;C:\Users\admin\AppData\Local\Yarn\bin;C:\platform-tools;C:\Users\admin\spicetify-cli;C:\Users\admin\.dotnet\tools;C:\Program Files (x86)\Windows Kits\10\bin\10.0.19041.0\x64;C:\bin;G:\CLion 2021.2\bin;G:\IntelliJ IDEA Community Edition 2021.2.1\bin;C:\Users\admin\AppData\Local\Keybase\;c:\ipmitool_1.8.18-dellemc_p001;C:\Program Files\Cloudflare\Cloudflare WARP\;C:\Users\admin\scoop\shims;G:\FFMPEG\bin;C:\Users\admin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\admin\AppData\Roaming\Composer\vendor\bin;G:\Home\Stuff\Programming\flutter\bin;C:\MinGW\bin;C:\Users\admin\AppData\Local\Yarn\bin;C:\Users\admin\AppData\Local\GitHubDesktop\bin;C:\Program Files\heroku\bin;C:\Program Files\NASM;C:\Program Files\qemu;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.2\bin;C:\mongo-shell\bin;C:\xampp\pgsql\13\bin;C:\Program Files (x86)\Nmap;C:\Users\admin\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Windows Kits\8.1\bin\x86;C:\Users\admin\.dotnet\tools;C:\Users\admin\AppData\Local\Yarn\bin;C:\platform-tools;C:\Users\admin\AppData\Roaming\npm;C:\Users\admin\spicetify-cli;C:\Users\admin\.dotnet\tools;C:\Program Files (x86)\Windows Kits\10\bin\10.0.19041.0\x64;C:\bin;G:\CLion 2021.2\bin;G:\IntelliJ IDEA Community Edition 2021.2.1\bin;C:\Users\admin\AppData\Local\Keybase\;c:\ipmitool_1.8.18-dellemc_p001;C:\php;
+# environment
+JAVA_HOME = C:\Program Files\Java\jdk1.8.0_211
+# default
+MAKE_VERSION := 3.82.90
+# makefile
+.DEFAULT_GOAL := 
+# environment
+CLASSPATH = .;
+# environment
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# automatic
+%D = $(patsubst %/,%,$(patsubst %\,%,$(dir $%)))
+# environment
+LOCALAPPDATA = C:\Users\admin\AppData\Local
+# environment
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules;C:\Program Files\Intel\Wired Networking\
+# default
+MAKE_COMMAND := make.exe
+# environment
+PROCESSOR_ARCHITEW6432 = AMD64
+# environment
+AMDRMSDKPATH = C:\Program Files\AMD\RyzenMasterSDK\
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD
+# environment
+OS = Windows_NT
+# environment
+VSCODE_IPC_HOOK = \\.\pipe\40c024692924a7e0e09c00bf44e8c2ef-1.69.2-main-sock
+# environment
+HOMEPATH = \Users\admin
+# environment
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# environment
+NODE_DEFAULT = C:\Program Files\nodejs\versions\v16.10.0
+# environment
+PROMPT = $P$G
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(patsubst %\,%,$(dir $*)))
+# environment
+PT8HOME = F:\Cisco Packet Tracer 8.1.1
+# environment
+INTEL_DEV_REDIST = C:\Program Files (x86)\Common Files\Intel\Shared Libraries\
+# environment
+SYSTEMROOT = C:\WINDOWS
+# automatic
++D = $(patsubst %/,%,$(patsubst %\,%,$(dir $+)))
+# automatic
++F = $(notdir $+)
+# environment
+APPDATA = C:\Users\admin\AppData\Roaming
+# environment
+TEMP = C:\Users\admin\AppData\Local\Temp
+# environment
+AMDRMPATH = C:\Program Files\AMD\RyzenMaster\
+# environment
+COMSPEC = C:\WINDOWS\system32\cmd.exe
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# environment
+PLATFORMIO_CALLER = vscode
+# environment
+LC_ALL = C
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# environment
+SYSTEMDRIVE = C:
+# environment
+SESSIONNAME = Console
+# environment
+PROCESSOR_REVISION = 7100
+# default
+.INCLUDE_DIRS = C:/MinGW/include
+# environment
+VBOX_HWVIRTEX_IGNORE_SVM_IN_USE = 1
+# default
+.RECIPEPREFIX := 
+# environment
+LANG = C
+# environment
+PROCESSOR_LEVEL = 23
+# environment
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+# environment
+VSCODE_PID = 5000
+# environment
+USERDOMAIN_ROAMINGPROFILE = OVERLORD
+# variable set hash-table stats:
+# Load=115/1024=11%, Rehash=0, Collisions=15/131=11%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# C:\ProgramData\DockerDesktop\version-bin (key C:/ProgramData/DockerDesktop/version-bin, mtime 1632764805): 2 files, no impossibilities.
+# C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler (key C:/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64_win/compiler, mtime 1585223232): 19 files, no impossibilities.
+# C:\ProgramData\Oracle\Java\javapath (key C:/ProgramData/Oracle/Java/javapath, mtime 1623593553): 5 files, no impossibilities.
+# C:\Program Files (x86)\Windows Kits\10\bin\10.0.19041.0\x64 (key C:/Program Files (x86)/Windows Kits/10/bin/10.0.19041.0/x64, mtime 1626802289): 192 files, no impossibilities.
+# C:\Program Files\nodejs\default (key C:/Program Files/nodejs/default, mtime 1657062492): 16 files, no impossibilities.
+# C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\: could not be stat'd.
+# C:\Users\admin\scoop\shims (key C:/Users/admin/scoop/shims, mtime 1648247137): 8 files, no impossibilities.
+# C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR (key C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR, mtime 1634059741): 5 files, no impossibilities.
+# C:\Program Files (x86)\Yarn\bin\ (key C:/Program Files (x86)/Yarn/bin/, mtime 1592076777): 7 files, no impossibilities.
+# C:\Windows\System32\WindowsPowerShell\v1.0\ (key C:/Windows/System32/WindowsPowerShell/v1.0/, mtime 1612483012): 30 files, no impossibilities.
+# C:\WINDOWS\System32\Wbem (key C:/WINDOWS/System32/Wbem, mtime 1646792488): 171 files, no impossibilities.
+# G:\FFMPEG\bin (key G:/FFMPEG/bin, mtime 1582204279): 5 files, no impossibilities.
+# . (key c:/xampp/htdocs/Projects/GalacOSTheBest, mtime 1644337709): 8 files, no impossibilities.
+# C:\php (key C:/php, mtime 1656084171): 38 files, no impossibilities.
+# C:\Program Files\Java\jdk1.8.0_211\bin (key C:/Program Files/Java/jdk1.8.0_211/bin, mtime 1632166428): 56 files, no impossibilities.
+# C:\Program Files\Git LFS (key C:/Program Files/Git LFS, mtime 1625235384): 5 files, no impossibilities.
+# C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\ (key C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/, mtime 1632768122): 7 files, no impossibilities.
+# C:\Program Files (x86)\Common Files\Oracle\Java\javapath (key C:/Program Files (x86)/Common Files/Oracle/Java/javapath, mtime 1653144644): 5 files, no impossibilities.
+# K:\VMWARE\bin\ (key K:/VMWARE/bin/, mtime 1658512788): 4 files, no impossibilities.
+# G:\IntelliJ IDEA Community Edition 2021.2.1\bin (key G:/IntelliJ IDEA Community Edition 2021.2.1/bin, mtime 1630173046): 31 files, no impossibilities.
+# C:\mongo-shell\bin (key C:/mongo-shell/bin, mtime 1602345511): 4 files, no impossibilities.
+# C:\Program Files (x86)\cloudflared\. (key C:/Program Files (x86)/cloudflared, mtime 1649612259): 3 files, no impossibilities.
+# C:\Program Files\Docker\Docker\resources\bin (key C:/Program Files/Docker/Docker/resources/bin, mtime 1632764736): 13 files, no impossibilities.
+# C:\Program Files\Git\cmd (key C:/Program Files/Git/cmd, mtime 1637870721): 8 files, no impossibilities.
+# C:\Windows\System32\OpenSSH\: could not be stat'd.
+# C:\MinGW\bin (key C:/MinGW/bin, mtime 1601750906): 143 files, no impossibilities.
+# C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common (key C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common, mtime 1633537591): 10 files, no impossibilities.
+# C:\xampp\pgsql\13\bin: could not be stat'd.
+# C:\Users\admin\AppData\Local\Keybase\ (key C:/Users/admin/AppData/Local/Keybase/, mtime 1648905606): 55 files, no impossibilities.
+# C:\WINDOWS (key C:/WINDOWS, mtime 1656603055): 141 files, no impossibilities.
+# C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\ (key C:/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/, mtime 1621094336): 73 files, no impossibilities.
+# C:\Program Files\heroku\bin (key C:/Program Files/heroku/bin, mtime 1600284423): 4 files, no impossibilities.
+# C:\Users\admin\AppData\Roaming\npm (key C:/Users/admin/AppData/Roaming/npm, mtime 1657062373): 106 files, no impossibilities.
+# C:\ProgramData\chocolatey\bin (key C:/ProgramData/chocolatey/bin, mtime 1645215782): 18 files, no impossibilities.
+# C:\Program Files\Oculus\Support\oculus-runtime (key C:/Program Files/Oculus/Support/oculus-runtime, mtime 1659658020): 36 files, no impossibilities.
+# G:\Home\Stuff\Programming\flutter\bin: could not be stat'd.
+# C:\Program Files\OpenSSH-Win64 (key C:/Program Files/OpenSSH-Win64, mtime 1626294387): 24 files, no impossibilities.
+# C:\Users\admin\AppData\Roaming\Composer\vendor\bin: could not be stat'd.
+# C:\Program Files\NASM (key C:/Program Files/NASM, mtime 1600459708): 18 files, no impossibilities.
+# C:\platform-tools (key C:/platform-tools, mtime 1618939209): 19 files, no impossibilities.
+# C:\Users\admin\AppData\Local\Microsoft\WindowsApps (key C:/Users/admin/AppData/Local/Microsoft/WindowsApps, mtime 1658521151): 25 files, no impossibilities.
+# C:\Program Files\Microsoft SQL Server\130\Tools\Binn\ (key C:/Program Files/Microsoft SQL Server/130/Tools/Binn/, mtime 1584972321): 4 files, no impossibilities.
+# C:\Windows\System32\Wbem (key C:/Windows/System32/Wbem, mtime 1646792488): 171 files, no impossibilities.
+# C:\Users\admin\AppData\Local\Yarn\bin (key C:/Users/admin/AppData/Local/Yarn/bin, mtime 1659480396): 60 files, no impossibilities.
+# C:\Windows (key C:/Windows, mtime 1656603055): 141 files, no impossibilities.
+# C:\ProgramData\ComposerSetup\bin (key C:/ProgramData/ComposerSetup/bin, mtime 1638822471): 5 files, no impossibilities.
+# C:\Users\admin\spicetify-cli (key C:/Users/admin/spicetify-cli, mtime 1625841421): 9 files, no impossibilities.
+# c:\ipmitool_1.8.18-dellemc_p001 (key c:/ipmitool_1.8.18-dellemc_p001, mtime 1655130380): 12 files, no impossibilities.
+# C:\Python38\ (key C:/Python38/, mtime 1656877071): 20 files, no impossibilities.
+# G:\CLion 2021.2\bin (key G:/CLion 2021.2/bin, mtime 1629140540): 35 files, no impossibilities.
+# C:\Program Files\Cloudflare\Cloudflare WARP (key C:/Program Files/Cloudflare/Cloudflare WARP, mtime 1658793419): 11 files, no impossibilities.
+# C:\Users\admin\AppData\Local\GitHubDesktop\bin (key C:/Users/admin/AppData/Local/GitHubDesktop/bin, mtime 1596912852): 4 files, no impossibilities.
+# C:\Python38\Scripts\ (key C:/Python38/Scripts/, mtime 1656877071): 66 files, no impossibilities.
+# C:\Program Files\Common Files\Oracle\Java\javapath (key C:/Program Files/Common Files/Oracle/Java/javapath, mtime 1645294918): 6 files, no impossibilities.
+# C:\Program Files\dotnet\ (key C:/Program Files/dotnet/, mtime 1631039713): 13 files, no impossibilities.
+# C:\Program Files\Cloudflare\Cloudflare WARP\ (key C:/Program Files/Cloudflare/Cloudflare WARP/, mtime 1658793419): 11 files, no impossibilities.
+# C:\Program Files (x86)\Nmap (key C:/Program Files (x86)/Nmap, mtime 1653144606): 37 files, no impossibilities.
+# C:\Users\admin\AppData\Local\Programs\Microsoft VS Code\bin (key C:/Users/admin/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1658975265): 4 files, no impossibilities.
+# C:\Program Files\GitHub CLI\ (key C:/Program Files/GitHub CLI/, mtime 1649351262): 3 files, no impossibilities.
+# C:\WINDOWS\System32\WindowsPowerShell\v1.0\ (key C:/WINDOWS/System32/WindowsPowerShell/v1.0/, mtime 1612483012): 30 files, no impossibilities.
+# C:\Windows\system32 (key C:/Windows/system32, mtime 1659796944): 3108 files, no impossibilities.
+# C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.2\bin: could not be stat'd.
+# C:\Program Files\nodejs\versions\v16.10.0 (key C:/Program Files/nodejs/versions/v16.10.0, mtime 1657062473): 16 files, no impossibilities.
+# C:\bin (key C:/bin, mtime 1641408651): 4 files, no impossibilities.
+# C:\Program Files\WireGuard\ (key C:/Program Files/WireGuard/, mtime 1644872332): 5 files, no impossibilities.
+# C:\Program Files (x86)\Windows Kits\8.1\bin\x86: could not be stat'd.
+# C:\Program Files\nodejs (key C:/Program Files/nodejs, mtime 1657062492): 14 files, no impossibilities.
+# C:\Users\admin\.dotnet\tools (key C:/Users/admin/.dotnet/tools, mtime 1616018621): 4 files, no impossibilities.
+# C:\Program Files\PowerShell\7\ (key C:/Program Files/PowerShell/7/, mtime 1597156525): 471 files, no impossibilities.
+# C:\Program Files (x86)\Gpg4win\..\GnuPG\bin (key C:/Program Files (x86)/GnuPG/bin, mtime 1636911742): 25 files, no impossibilities.
+# C:\WINDOWS\System32\OpenSSH\: could not be stat'd.
+# C:\Program Files\qemu (key C:/Program Files/qemu, mtime 1600451189): 203 files, no impossibilities.
+# C:\Program Files\PuTTY\ (key C:/Program Files/PuTTY/, mtime 1582989163): 12 files, no impossibilities.
+# C:\WINDOWS\system32 (key C:/WINDOWS/system32, mtime 1659796944): 3108 files, no impossibilities.
+
+# 8926 files, no impossibilities in 74 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+makefile:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+GNUmakefile:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# files hash-table stats:
+# Load=6/1024=1%, Rehash=0, Collisions=0/15=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 11 (10) / strings = 5280 / storage = 88894 B / avg = 16 B
+# current buf: size = 8174 B / used = 7232 B / count = 409 / avg = 17 B
+# other used: total = 80720 B / count = 4871 / avg = 16 B
+# other free: total = 78 B / max = 14 B / min = 2 B / avg = 7 B
+
+# strcache performance: lookups = 9008 / hit rate = 41%
+# hash-table stats:
+# Load=5280/8192=64%, Rehash=0, Collisions=4781/9008=53%
+# Finished Make data base on Mon Aug 08 00:53:18 2022
+
+ 
+make.exe: *** No rule to make target 'all'.  Stop.
+
