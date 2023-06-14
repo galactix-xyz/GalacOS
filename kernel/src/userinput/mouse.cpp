@@ -2,21 +2,21 @@
 
 uint8_t mousePointer[] = {
 	0b10000000, 0b00000000,
-	0b10000000, 0b00000000,
-	0b10000000, 0b00000000,
-	0b10000000, 0b00000000,
-	0b10000000, 0b00000000,
-	0b10000000, 0b00000000,
-	0b10000000, 0b00000000,
-	0b10000000, 0b00000000,
-	0b10000000, 0b00000000,
-	0b10000000, 0b00000000,
-	0b10000000, 0b00000000,
-	0b10001000, 0b00000000,
-	0b10010100, 0b00000000,
-	0b10100010, 0b00000000,
-	0b11000001, 0b00000000,
-	0b10000000, 0b10000000,
+	0b11000000, 0b00000000,
+	0b11100000, 0b00000000,
+	0b11110000, 0b00000000,
+	0b11111000, 0b00000000,
+	0b11111100, 0b00000000,
+	0b11111110, 0b00000000,
+	0b11111111, 0b00000000,
+	0b00011000, 0b00000000,
+	0b00011000, 0b00000000,
+	0b00001100, 0b00000000,
+	0b00000000, 0b00000000,
+	0b00000000, 0b00000000,
+	0b00000000, 0b00000000,
+	0b00000000, 0b00000000,
+	0b00000000, 0b00000000,
 };
 
 void mouseWait(){
@@ -157,6 +157,30 @@ void processMousePacket() {
 
         mousePacketReady = false;
         mousePositionOld = mousePosition;
+}
+
+void mouse_absolute(void) {
+    vmware_cmd cmd;
+
+    // Enable
+    cmd.bx = ABSPOINTER_ENABLE;
+    cmd.command = CMD_ABSPOINTER_COMMAND;
+    vmware_send(&cmd);
+
+    // Status
+    cmd.bx = 0;
+    cmd.command = CMD_ABSPOINTER_STATUS;
+    vmware_send(&cmd);
+
+    // Read data (1)
+    cmd.bx = 1;
+    cmd.command = CMD_ABSPOINTER_DATA;
+    vmware_send(&cmd);
+
+    // Enable absolute
+    cmd.bx = ABSPOINTER_ABSOLUTE;
+    cmd.command = CMD_ABSPOINTER_COMMAND;
+    vmware_send(&cmd);
 }
 
 void initPS2Mouse() {
